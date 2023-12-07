@@ -11,11 +11,11 @@ public class KeyboardInput {
      */
     private Double dResult;
 
-    private CalculateCurrentInput calculateCurrent;
+    private CalculateBasicInput calculateCurrent;
 
 
     KeyboardInput () {
-        calculateCurrent = new CalculateCurrentInput();
+        calculateCurrent = new CalculateBasicInput();
         textPanelInputKeys();
     }
 

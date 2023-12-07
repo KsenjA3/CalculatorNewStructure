@@ -48,6 +48,7 @@ public class CalculateFace extends JFrame {
 
         textPanel = new PanelTextLog();
         keyPanelBasic = new PanelKeyBasic();
+        new KeyboardInput();
 
             // width Basic= width frame and text
         widthSize=keyPanelBasic.getWidthKeyPanel();
@@ -56,7 +57,7 @@ public class CalculateFace extends JFrame {
         hieghtSize=textPanel.getHeightTextPanel()+MySizePanel.HIEGHT_SIZE_KEY.get();
 
         container.add(textPanel.getTextPanel(widthSize));
-        container.add(keyPanelBasic.getKeyPanelBasic());
+        container.add(keyPanelBasic.getKeyPanel());
 
 
         frame.setPreferredSize(new Dimension(widthSize, hieghtSize));

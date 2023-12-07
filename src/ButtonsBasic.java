@@ -51,7 +51,7 @@ class ButtonsBasic {
     /**
      * object for calculation
      */
-    private CalculateCurrentInput calculateCurrent;
+    private CalculateBasicInput calculateCurrent;
 
     /**
      * result of calculation
@@ -77,7 +77,7 @@ class ButtonsBasic {
         dResultPercent = 0.0;
 
         //create object for calculation
-        calculateCurrent = new CalculateCurrentInput();
+        calculateCurrent = new CalculateBasicInput();
 
         listButtons =new  HashMap <String,JButton> ();
         makeButtons();

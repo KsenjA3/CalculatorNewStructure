@@ -99,6 +99,15 @@ class PanelKeyBasic {
 
     }
 
+
+    /**
+     * get  KeyPanel
+     * @return Basic KeyPanel
+     */
+    JPanel getKeyPanel() {
+        return getKeyPanelBasic();
+    }
+
     /**
      * get Basic KeyPanel
      * @return Basic KeyPanel
@@ -124,7 +133,7 @@ class PanelKeyBasic {
      * @param ipady inly filling button along vertical
      * @param ipadx inly filling button along horizontal
      */
-    private void makeGridBagConstraints(int gridy, int gridx, int gridwidth, int gridheight, int ipady, int ipadx) {
+    void makeGridBagConstraints(int gridy, int gridx, int gridwidth, int gridheight, int ipady, int ipadx) {
         gbc.gridy = gridy;
         gbc.gridx = gridx;
         gbc.gridwidth = gridwidth;

@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.util.ArrayList;
 
-class CalculateCurrentInput {
+class CalculateBasicInput {
     private ArrayList<BigDecimal> arrD;
     private ArrayList <calculate> arrSign;
 
@@ -188,14 +188,6 @@ class CalculateCurrentInput {
         doubleResult = dResult.doubleValue();
         return doubleResult;
     }
-
-
-
-
-
-
-
-
 
 }
 

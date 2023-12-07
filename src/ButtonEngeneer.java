@@ -1,8 +1,8 @@
 import javax.swing.*;
 
-class ButtonEngeneer  {
+class ButtonEngeneer extends ButtonsBasic {
 
-    ButtonEngeneer(JTextPane textLog, JTextPane textInput, JLabel textRezult) {
+    ButtonEngeneer() {
 
 
     }
