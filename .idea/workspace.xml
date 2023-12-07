@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="" />
+    <list default="true" id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ButtonEngeneer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KeyboardInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonsBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonsBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculateCurrentInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculateCurrentInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculateFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculateFace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFontNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFontNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFontSizes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFontSizes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFonts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFonts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MySizePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySizePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelKeyBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelKeyBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PanelTextLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelTextLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/calculate.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Z7Hj787IaCOudSo370TGj27hVu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -13,12 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/JavaProjects/CalculatorNewStructure&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="CalculateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CalculateDemo" />
+      <module name="CalculatorNewStructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CalculateDemo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -29,5 +78,92 @@
       <updated>1701766333163</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

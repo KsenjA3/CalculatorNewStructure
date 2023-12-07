@@ -1,2 +1,103 @@
-package PACKAGE_NAME;public class PanelTextLog {
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.text.SimpleAttributeSet;
+import javax.swing.text.StyleConstants;
+
+class PanelTextLog extends PanelText{
+
+    /**
+     * for writing to PanelTextLog
+     */
+    static StringBuffer sbLog;
+    static JTextPane  textLog;
+
+    /**
+     * elements PanelTextLog
+     */
+    private JScrollPane  scrollLog;
+    private JPanel textPanelLog;
+
+
+    PanelTextLog () {
+
+        super();
+        sbLog = new StringBuffer();
+
+        textLog = new JTextPane();
+        textLog.setBackground(MyColors.COLOR_BUTTON.get());
+        var textLogAttributes = new SimpleAttributeSet();
+        StyleConstants.setAlignment(textLogAttributes, StyleConstants.ALIGN_RIGHT);
+        StyleConstants.setFontFamily(textLogAttributes,MyFontNames.FRONT_NAME_TEXT_LOG.get() );
+        StyleConstants.setFontSize(textLogAttributes,MyFontSizes.FRONT_SIZE_TEXT_LOG.get() );
+        StyleConstants.setForeground(textLogAttributes, MyColors.COLOR_LOG.get());
+        textLog.setParagraphAttributes(textLogAttributes, true);
+
+        scrollLog = new JScrollPane(textLog,
+                JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+                JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollLog.setBorder(null);
+    }
+
+    /**
+     * get TextPanel
+     * @param widthSizeText depends on type of keyPanel
+     * @return TextPanel
+     * which include Log, Input and Result windows
+     */
+    @Override
+    JPanel getTextPanel (int widthSizeText) {
+        super.getTextPanel(widthSizeText).add(scrollLog);
+        scrollLog.setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_LOG.get()));
+
+        return super.getTextPanel(widthSizeText);
+    }
+
+    /**
+     *get Height TextPanel
+     * @return Height TextPanel
+     */
+    @Override
+    int getHeightTextPanel (){ return MySizePanel.HIEGHT_SIZE_TEXT_INPUT.get()
+            + MySizePanel.HIEGHT_SIZE_TEXT_RESULT.get()
+            + MySizePanel.HIEGHT_SIZE_TEXT_LOG.get();}
+
+
+    /**
+     * get LogPanel
+     * @return LogPanel
+     */
+    JScrollPane getScrollLog (){ return scrollLog; }
+
+    /**
+     * get Log for writing text
+     * @return  textLog
+     */
+    JTextPane getTextLog() { return textLog; }
+
+
+    /**
+     * manage visibility of Log
+     * @param state Visible Log is true, unvisible - false
+     * @param frame frame of calculator
+     * @param widthSizeText depends on type of keyPanel
+     */
+    void setVisibleTextPanelLog (boolean state, JFrame frame, int widthSizeText) {
+        scrollLog.setVisible(state);
+        if (state){
+            frame.setPreferredSize(new Dimension(widthSizeText,getHeightTextPanel()));
+            getPanelRezult().setPreferredSize(new Dimension(widthSizeText, MySizePanel.HIEGHT_SIZE_TEXT_RESULT.get()));
+            getScrollinput().setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_INPUT.get()));
+            textLog.setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_LOG.get()));
+        }
+        else {
+            frame.setPreferredSize(new Dimension(widthSizeText,super.getHeightTextPanel()));
+            getPanelRezult().setPreferredSize(new Dimension(widthSizeText, MySizePanel.HIEGHT_SIZE_TEXT_RESULT.get()));
+            getScrollinput().setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_INPUT.get()));
+        }
+
+        frame.pack();
+    }
+
+
+
 }
