@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="InputFromKeyboard" />
+    <list default="true" id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="PanelEngineer view">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +37,16 @@
     &quot;last_opened_file_path&quot;: &quot;E:/JavaProjects/CalculatorNewStructure&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CalculateDemo">
     <configuration name="CalculateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CalculateDemo" />
+      <module name="CalculatorNewStructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestShort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestShort" />
       <module name="CalculatorNewStructure" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -46,6 +55,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.CalculateDemo" />
+        <item itemvalue="Application.TestShort" />
       </list>
     </recent_temporary>
   </component>
@@ -72,7 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701953161544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="InputFromKeyboard">
+      <created>1701981489242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701981489242</updated>
+    </task>
+    <task id="LOCAL-00004" summary="PanelEngineer view">
+      <created>1702157131679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702157131679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,7 +113,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BasicCalculate" />
     <MESSAGE value="InputFromKeyboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="InputFromKeyboard" />
+    <MESSAGE value="PanelEngineer view" />
+    <option name="LAST_COMMIT_MESSAGE" value="PanelEngineer view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -126,18 +151,81 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>69</line>
+          <line>71</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>67</line>
+          <line>69</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>64</line>
+          <line>66</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CalculateBasicInput.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ButtonsEngineer.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ButtonsEngineer.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>26</line>
+          <properties field="dNumber" class="ButtonsBasic" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>31</line>
+          <properties field="func" class="ButtonsBasic" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>39</line>
+          <properties field="nameSign" class="ButtonsBasic" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>51</line>
+          <properties field="calculateCurrent" class="ButtonsBasic" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>56</line>
+          <properties field="dResult" class="ButtonsBasic" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>25</line>
+          <properties field="strNumber" class="ButtonsBasic" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>40</line>
+          <properties field="strInputFormerSign" class="ButtonsBasic" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
+          <line>41</line>
+          <properties field="dResultPercent" class="ButtonsBasic" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,8 +8,6 @@ import java.util.HashMap;
 
 class ButtonsBasic {
 
-    HashMap<String,JButton> listButtons;
-
     /**
      * button simple calculation
      */
@@ -25,13 +23,13 @@ class ButtonsBasic {
     /**
      * inly number
      */
-    private String strNumber;
-    private Double dNumber;
+     String strNumber;
+     Double dNumber;
 
     /**
      * type function
      */
-    private calculate func;
+     calculate func;
 
     /**
      * for calculate Percent
@@ -56,14 +54,16 @@ class ButtonsBasic {
     /**
      * result of calculation
      */
-    private Double dResult;
+     Double dResult;
 
+
+    private HashMap<String,JButton> listButtons;
 
     ButtonsBasic() {
         N = 0;
         strNumber = "0";
         dNumber = 0.0;
-        dResult = 0.0;
+        dResult=0.0;
         func = null;
 
         /*
@@ -94,7 +94,7 @@ class ButtonsBasic {
     /**
      * create ALL Buttons
      */
-    private void makeButtons() {
+     void makeButtons() {
 
         //SIMPLE CALCULATOR
 
@@ -137,7 +137,7 @@ class ButtonsBasic {
         bResult = createButton(new CreateSignButton(" = "),
                 " = ", KeyStroke.getKeyStroke('='), MyColors.COLOR_SIGN.get(), MyFonts.FONT_BUTTON.get());
         bRadical = createButton(new CreateSignButton(" √ "),
-                " √ ", KeyStroke.getKeyStroke("sqrt"), MyColors.COLOR_SIGN.get(), MyFonts.FONT_BUTTON.get());
+                " √ ",  MyColors.COLOR_SIGN.get(), MyFonts.FONT_BUTTON.get());
 
 
         //Delete and Memory
@@ -165,7 +165,7 @@ class ButtonsBasic {
      * @param font font button
      * @return button
      */
-    private JButton createButton(Action bAction, String name,
+     JButton createButton(Action bAction, String name,
                                  KeyStroke keyStroke, Color color, Font font) {
         b = new JButton(bAction);
         b.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(keyStroke, name);
@@ -181,6 +181,18 @@ class ButtonsBasic {
             b.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), "name=");
             b.getActionMap().put("name=", bAction);
         }
+        return b;
+    }
+
+    JButton createButton(Action bAction, String name,
+                          Color color, Font font) {
+        b = new JButton(bAction);
+        b.setBackground(color);
+        b.setFont(font);
+        var borderButton = BorderFactory.createEtchedBorder(EtchedBorder.RAISED);
+        b.setBorder(borderButton);
+
+        listButtons.put(name, b);
         return b;
     }
 
@@ -236,7 +248,9 @@ class ButtonsBasic {
                             bPlus, bMinus, bDivide, bMultiply, bPercent, bRadical);
                 }
                 PanelText.textRezult.setText(PanelText.strResult);
+
             }
+
         }
     }
 
@@ -511,4 +525,7 @@ class ButtonsBasic {
     }
 
 
+    Double getdNumber (){
+        return  dNumber;
+    }
 }

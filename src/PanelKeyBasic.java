@@ -4,7 +4,7 @@ import java.util.*;
 
 class PanelKeyBasic {
 
-
+    ButtonsBasic buttonsBasic;
 
     private JPanel keyPanelBasic;
 
@@ -29,7 +29,7 @@ class PanelKeyBasic {
         gbc.weightx = 100;
         gbc.weighty = 100;
 
-        ButtonsBasic buttonsBasic =  new ButtonsBasic ();
+        buttonsBasic =  new ButtonsBasic ();
         HashMap<String,JButton> listButtons= buttonsBasic.getButtons();
         Set <Map.Entry<String,JButton>> set =listButtons.entrySet();
 
@@ -105,16 +105,9 @@ class PanelKeyBasic {
      * @return Basic KeyPanel
      */
     JPanel getKeyPanel() {
-        return getKeyPanelBasic();
-    }
-
-    /**
-     * get Basic KeyPanel
-     * @return Basic KeyPanel
-     */
-    JPanel getKeyPanelBasic() {
         return keyPanelBasic;
     }
+
 
     /**
      * get Width Basic KeyPanel

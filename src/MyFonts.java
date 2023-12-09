@@ -3,6 +3,9 @@ import java.awt.*;
 enum MyFonts {
 
     FONT_BUTTON (new Font("Franklin Gothic Medium", Font.PLAIN, 30)),
+    FONT_BUTTON_MIDDLE (new Font("Franklin Gothic Medium", Font.PLAIN, 27)),
+    FONT_BUTTON_LOW (new Font("Franklin Gothic Medium", Font.PLAIN, 20)),
+    FONT_BUTTON_BOTTOM (new Font("Franklin Gothic Medium", Font.PLAIN, 18)),
     FONT_BUTTON_MEMORY (new Font("Cambria", Font.PLAIN, 30)),
     FONT_TEXT_INPUT(new Font("Arial", Font.PLAIN, MyFontSizes.FRONT_SIZE_TEXT_INPUT.get())),
     FONT_TEXT_RESULT(new Font("Arial", Font.PLAIN, MyFontSizes.FRONT_SIZE_TEXT_RESULT.get())),
