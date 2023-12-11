@@ -4,33 +4,37 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-class PanelKeyEngineer extends PanelKeyBasic{
+class PanelKeyEngineer extends PanelKeyGeneral{
 
      private JPanel keyPanelEngineer, keyPanel;
 
      PanelKeyEngineer() {
 
-          // create Engineer keyPanel
+
+         /**
+          * create Engineer KeyPanel
+          */
           keyPanelEngineer = new JPanel();
           keyPanelEngineer.setBackground(MyColors.COLOR_PANE.get());
           keyPanelEngineer.setPreferredSize(new Dimension(MySizePanel.WIDTH_SIZE_ENGINEER.get(), MySizePanel.HIEGHT_SIZE_KEY.get()));
-
-          //GridBagLayout
-          gbag = new GridBagLayout();
-          gbc = new GridBagConstraints();
-
-          // GridBagLayout keyPanel
           keyPanelEngineer.setLayout(gbag);
-          gbc.fill = GridBagConstraints.CENTER;
-          gbc.weightx = 100;
-          gbc.weighty = 100;
 
-          var buttonsEngineer =  new ButtonsEngineer ();
+         /**
+          * create engineer buttons
+          */
+         var buttonsEngineer =  new ButtonsEngineer ();
           HashMap<String,JButton> listButtons= buttonsEngineer.getButtons();
           Set<Map.Entry<String,JButton>> set =listButtons.entrySet();
 
 
-          for (Map.Entry<String,JButton> button : set) {
+         var keyPanelBasic = makePanelGeneral(listButtons);
+
+
+
+         /**
+          * locate buttons to Engineer KeyPanel
+          */
+         for (Map.Entry<String,JButton> button : set) {
                switch (button.getKey()) {
 
                     // line 1
@@ -100,11 +104,14 @@ class PanelKeyEngineer extends PanelKeyBasic{
                }
           }
 
-          // create  keyPanel included Engineer and Basic keyPanels
+         /**
+          * create result Panel
+          * included Engineer and Basic keyPanels
+          */
           keyPanel = new JPanel();
           keyPanel.setLayout(new BoxLayout(keyPanel, BoxLayout.X_AXIS));
           keyPanel.add(keyPanelEngineer);
-          keyPanel.add(super.getKeyPanel());
+          keyPanel.add(keyPanelBasic);
 
      }
 
@@ -112,7 +119,6 @@ class PanelKeyEngineer extends PanelKeyBasic{
       * get  KeyPanel
       * @return Engineer KeyPanel
       */
-     @Override
      JPanel getKeyPanel() {
           return keyPanel;
      }
@@ -122,7 +128,6 @@ class PanelKeyEngineer extends PanelKeyBasic{
       * get Width Engineer KeyPanel
       * @return Width KeyPanel
       */
-     @Override
      int getWidthKeyPanel () {
           return MySizePanel.WIDTH_SIZE_BASIC.get()+MySizePanel.WIDTH_SIZE_ENGINEER.get();
      }

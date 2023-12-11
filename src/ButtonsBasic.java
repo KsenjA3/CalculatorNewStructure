@@ -11,9 +11,9 @@ class ButtonsBasic {
     /**
      * button simple calculation
      */
-    private JButton b, b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bPoint;
-    private JButton bPlus, bMinus, bDivide, bMultiply, bPercent, bRadical, bResult;
-    private JButton bMemoryAdd, bMemoryDel, bMemoryHold, bClear, bDel;
+    protected JButton b, b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bPoint;
+    protected JButton bPlus, bMinus, bDivide, bMultiply, bPercent, bRadical, bResult;
+    protected JButton bMemoryAdd, bMemoryDel, bMemoryHold, bClear, bDel;
 
     /**
      * restriction amount  input figures to number
@@ -23,13 +23,13 @@ class ButtonsBasic {
     /**
      * inly number
      */
-     String strNumber;
-     Double dNumber;
+    protected String strNumber;
+    protected Double dNumber;
 
     /**
      * type function
      */
-     calculate func;
+    protected calculate func;
 
     /**
      * for calculate Percent
@@ -54,18 +54,18 @@ class ButtonsBasic {
     /**
      * result of calculation
      */
-     Double dResult;
+    protected Double dResult;
 
 
     private HashMap<String,JButton> listButtons;
 
-    ButtonsBasic() {
+    protected ButtonsBasic() {
         N = 0;
         strNumber = "0";
         dNumber = 0.0;
         dResult=0.0;
         func = null;
-
+        System.out.println("func=null is ");
         /*
          * for calculate Percent
          * % and divide for 0, input number after %
@@ -87,14 +87,14 @@ class ButtonsBasic {
      * get map of buttons
      * @return list of buttons with  name keys
      */
-    HashMap <String,JButton>  getButtons () {
+    protected HashMap <String,JButton>  getButtons () {
         return listButtons;
     }
 
     /**
      * create ALL Buttons
      */
-     void makeButtons() {
+    protected void makeButtons() {
 
         //SIMPLE CALCULATOR
 
@@ -165,7 +165,7 @@ class ButtonsBasic {
      * @param font font button
      * @return button
      */
-     JButton createButton(Action bAction, String name,
+    protected JButton createButton(Action bAction, String name,
                                  KeyStroke keyStroke, Color color, Font font) {
         b = new JButton(bAction);
         b.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(keyStroke, name);
@@ -184,7 +184,7 @@ class ButtonsBasic {
         return b;
     }
 
-    JButton createButton(Action bAction, String name,
+    protected JButton createButton(Action bAction, String name,
                           Color color, Font font) {
         b = new JButton(bAction);
         b.setBackground(color);
@@ -525,7 +525,4 @@ class ButtonsBasic {
     }
 
 
-    Double getdNumber (){
-        return  dNumber;
-    }
 }

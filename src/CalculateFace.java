@@ -47,19 +47,20 @@ public class CalculateFace extends JFrame {
         frame.setContentPane(container);
 
         textPanel = new PanelTextLog();
-     //   keyPanelBasic = new PanelKeyBasic();
+   //   keyPanelBasic = new PanelKeyBasic();
         keyPanelEngineer = new PanelKeyEngineer();
 
         new KeyboardInput();
 
             // width keyPanel= width frame = textPanel
+ //       widthSize=keyPanelBasic.getWidthKeyPanel();
         widthSize=keyPanelEngineer.getWidthKeyPanel();
 
             // hieght frame
         hieghtSize=textPanel.getHeightTextPanel()+MySizePanel.HIEGHT_SIZE_KEY.get();
 
         container.add(textPanel.getTextPanel(widthSize));
-   //     container.add(keyPanelBasic.getKeyPanel());
+    //    container.add(keyPanelBasic.getKeyPanel());
         container.add(keyPanelEngineer.getKeyPanel());
 
         frame.setPreferredSize(new Dimension(widthSize, hieghtSize));

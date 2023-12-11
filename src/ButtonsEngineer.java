@@ -6,14 +6,15 @@ class ButtonsEngineer extends ButtonsBasic {
 
     ButtonsEngineer() {
         makeButtons();
+        makeEngineerButtons();
 
     }
 
     /**
      * create engineer Buttons
      */
-    @Override
-     void makeButtons() {
+
+     void makeEngineerButtons() {
 
         createButton(new CreateEngineerButton(")"),")",
                 MyColors.COLOR_SIGN.get(), MyFonts.FONT_BUTTON.get() );
@@ -68,6 +69,7 @@ class ButtonsEngineer extends ButtonsBasic {
 
 System.out.println("dResult = "+dResult);
 System.out.println("dNumber = "+ dNumber);
+System.out.println("func=null is "+ func==null);
                     dResult = -dResult;
 
                     PanelText.strResult = "=" + Operations.printNumber(dResult);
