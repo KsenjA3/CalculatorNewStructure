@@ -81,21 +81,25 @@ class PanelTextLog extends PanelText{
      * @param frame frame of calculator
      * @param widthSizeText depends on type of keyPanel
      */
-    void setVisibleTextPanelLog (boolean state, JFrame frame, int widthSizeText) {
+    int setVisibleTextPanelLog (boolean state, JFrame frame, int widthSizeText) {
         scrollLog.setVisible(state);
         if (state){
-            frame.setPreferredSize(new Dimension(widthSizeText,getHeightTextPanel()));
+            frame.setPreferredSize(new Dimension(widthSizeText,getHeightTextPanel()+MySizePanel.HIEGHT_SIZE_KEY.get()));
             getPanelRezult().setPreferredSize(new Dimension(widthSizeText, MySizePanel.HIEGHT_SIZE_TEXT_RESULT.get()));
             getScrollinput().setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_INPUT.get()));
             textLog.setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_LOG.get()));
+
+            return getHeightTextPanel ();
         }
         else {
-            frame.setPreferredSize(new Dimension(widthSizeText,super.getHeightTextPanel()));
+            frame.setPreferredSize(new Dimension(widthSizeText,super.getHeightTextPanel()+MySizePanel.HIEGHT_SIZE_KEY.get()));
             getPanelRezult().setPreferredSize(new Dimension(widthSizeText, MySizePanel.HIEGHT_SIZE_TEXT_RESULT.get()));
             getScrollinput().setPreferredSize(new Dimension(widthSizeText,MySizePanel.HIEGHT_SIZE_TEXT_INPUT.get()));
+
+            return super.getHeightTextPanel();
         }
 
-        frame.pack();
+
     }
 
 

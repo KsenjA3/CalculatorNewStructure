@@ -140,7 +140,7 @@ abstract class PanelKeyGeneral{
 
                }
                case " = " ->{
-                   makeGridBagConstraints(3, 4, 1, 2, 53, 6);
+                   makeGridBagConstraints(3, 4, 1, 2, 50, 6);
                    keyPanelGeneral.add(button.getValue(), gbc);
 
                }

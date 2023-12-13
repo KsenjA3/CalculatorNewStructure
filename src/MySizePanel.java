@@ -9,7 +9,7 @@ enum MySizePanel {
 
     WIDTH_SIZE_BASIC (260 + 20),
     WIDTH_SIZE_ENGINEER (150),
-    WIDTH_SIZE_IT (100);
+    WIDTH_SIZE_IT (180);
 
 
     private int size;

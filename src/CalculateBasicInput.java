@@ -6,8 +6,8 @@ class CalculateBasicInput {
     private ArrayList <calculate> arrSign;
 
     private String strNumber;      //inner number
-    private BigDecimal dNumber;
     calculate func;
+    private BigDecimal dNumber;
     private BigDecimal  dResult;         //for calculation
     private BigDecimal dNSqrt;              //service sqrt
     private BigDecimal dResultPercent;
@@ -16,6 +16,8 @@ class CalculateBasicInput {
     private boolean wasSqrt;
     private double doubleResult;
     private double doubleNumber;
+
+    private boolean wasNegativeNumber;
 
     /**
      * calculate result from string
@@ -33,40 +35,41 @@ class CalculateBasicInput {
         wasNumber = false;
         wasSqrt = false;
 
-//        System.out.println("strInput ="+strInput);
-        // delete space
+            // delete space
         strInput= strInput.replaceAll(" ", "");
-//        System.out.println(strInput);
 
         arrD = new ArrayList<>();
         arrSign=new ArrayList<>();
+
+                //begin from Negative number
+        if (strInput.charAt(0)=='-') {
+            strInput = strInput.substring(1);
+            wasNegativeNumber = true;
+        }
 
         for (int i=0; i<strInput.length(); i++) {
 
             switch (strInput.charAt(i)) {
                 case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'-> {
-                    //create number
+                        //create number
                     strNumber = strNumber + strInput.charAt(i);
-                    //                  System.out.println("strNumber = " + strNumber);
 
-                    //if sqrt before number
+                        //if sqrt before number
                     if (wasSqrt) {
                         doubleNumber= Double.parseDouble(strNumber);
                         dNumber = new BigDecimal (doubleNumber);
 
                         for (int j = 0; j < figureSqrt; j++){
                             dNumber = Operations.sqrt(dNumber);
-//                            System.out.println("вычисления корня" + dNumber);
                         }
                         dNumber= Operations.multiply(dNSqrt,dNumber);
                     } else {          // число после -+*/
                         doubleNumber= Double.parseDouble(strNumber);
                         dNumber = new BigDecimal (doubleNumber);
                     }
-                    //write last number
+                        //write last number
                     if (i == strInput.length() - 1) {
                         arrD.add(dNumber);
-                        //                      System.out.println("last Number =" + dNumber);
                     }
 
                     wasNumber = true;
@@ -76,7 +79,6 @@ class CalculateBasicInput {
                         //if the last sign sqrt
                         if ((i + 1) == strInput.length()) {
                             arrD.add(dNumber);
-                            //                          System.out.println(" √ last Number =" + dNumber);
                         }
                         else             // dNumber * √
                             dNSqrt = dNumber;
@@ -136,9 +138,16 @@ class CalculateBasicInput {
         for (int i = 0; i<arrSign.size(); i++)
             System.out.println(i+" - "+ arrSign.get(i));
 */
-        //calculate the resultate
-        if (arrD.size()>0)
+
+
+            //calculate the resultate
+        if (arrD.size()>0) {
             dResult = arrD.get(0);
+            if(wasNegativeNumber)       //begin from Negative number
+                dResult=dResult.negate();
+        }
+
+
 
         if (arrD.size()>1){
             int j;
@@ -148,8 +157,6 @@ class CalculateBasicInput {
                     dResult = Operations.result(arrSign.get(j), dResult, arrD.get(i));
             }
         }
-        //       System.out.println(dResult);
-        //       System.out.println();
 
         doubleResult = dResult.doubleValue();
         return doubleResult;

@@ -23,6 +23,7 @@ class PanelKeyBasic extends PanelKeyGeneral{
      * @return Basic KeyPanel
      */
     JPanel getKeyPanel() {
+
         return keyPanelBasic;
     }
 

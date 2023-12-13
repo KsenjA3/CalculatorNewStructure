@@ -67,9 +67,7 @@ class ButtonsEngineer extends ButtonsBasic {
                     PanelTextLog.sbLog.append(PanelText.strInput).append("\n").append(PanelText.strResult).append("\n");
                     PanelTextLog.textLog.setText(PanelTextLog.sbLog.toString());
 
-System.out.println("dResult = "+dResult);
-System.out.println("dNumber = "+ dNumber);
-System.out.println("func=null is "+ func==null);
+
                     dResult = -dResult;
 
                     PanelText.strResult = "=" + Operations.printNumber(dResult);

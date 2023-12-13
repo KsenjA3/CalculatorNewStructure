@@ -37,9 +37,9 @@ class ButtonsBasic {
      * number after %
      * result before former sign
      */
-    private String nameSign;
-    private String strInputFormerSign;
-    private double dResultPercent;
+    protected String nameSign;
+    protected String strInputFormerSign;
+    protected double dResultPercent;
 
     /**
      * to safe into the memory
@@ -65,7 +65,7 @@ class ButtonsBasic {
         dNumber = 0.0;
         dResult=0.0;
         func = null;
-        System.out.println("func=null is ");
+
         /*
          * for calculate Percent
          * % and divide for 0, input number after %

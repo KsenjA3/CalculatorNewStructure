@@ -27,10 +27,6 @@ class PanelKeyEngineer extends PanelKeyGeneral{
           Set<Map.Entry<String,JButton>> set =listButtons.entrySet();
 
 
-         var keyPanelBasic = makePanelGeneral(listButtons);
-
-
-
          /**
           * locate buttons to Engineer KeyPanel
           */
@@ -111,7 +107,7 @@ class PanelKeyEngineer extends PanelKeyGeneral{
           keyPanel = new JPanel();
           keyPanel.setLayout(new BoxLayout(keyPanel, BoxLayout.X_AXIS));
           keyPanel.add(keyPanelEngineer);
-          keyPanel.add(keyPanelBasic);
+          keyPanel.add(makePanelGeneral(listButtons));
 
      }
 
