@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="MenuVeiw">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalculateFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculateFace.java" afterDir="false" />
+    <list default="true" id="ae0d9913-40cf-4cc4-9b11-a47e469ca69a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorNewStructure.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2Z7Hj787IaCOudSo370TGj27hVu" />
+  <component name="ProjectId" id="2ZeycnNDrLoTxnpWItl4QluPUlq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,91 +25,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/JavaProjects/CalculatorNewStructure"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CalculateDemo">
-    <configuration name="CalculateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CalculateDemo" />
-      <module name="CalculatorNewStructure" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestShort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestShort" />
-      <module name="CalculatorNewStructure" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CalculateDemo" />
-        <item itemvalue="Application.TestShort" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cc94b655-033f-4e8e-a032-b5268705f31e" name="Changes" comment="" />
-      <created>1701766333163</created>
+      <changelist id="ae0d9913-40cf-4cc4-9b11-a47e469ca69a" name="Changes" comment="" />
+      <created>1702796925258</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701766333163</updated>
+      <updated>1702796925258</updated>
     </task>
-    <task id="LOCAL-00001" summary="BasicCalculate">
-      <created>1701948669476</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1701948669476</updated>
-    </task>
-    <task id="LOCAL-00002" summary="InputFromKeyboard">
-      <created>1701953161544</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701953161544</updated>
-    </task>
-    <task id="LOCAL-00003" summary="InputFromKeyboard">
-      <created>1701981489242</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1701981489242</updated>
-    </task>
-    <task id="LOCAL-00004" summary="PanelEngineer view">
-      <created>1702157131679</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702157131679</updated>
-    </task>
-    <task id="LOCAL-00005" summary="PanelEngineer view">
-      <created>1702278257604</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702278257604</updated>
-    </task>
-    <task id="LOCAL-00006" summary="PanelEngineer view">
-      <created>1702294418498</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1702294418498</updated>
-    </task>
-    <task id="LOCAL-00007" summary="MenuVeiw">
-      <created>1702494555564</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702494555564</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,72 +49,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="BasicCalculate" />
-    <MESSAGE value="InputFromKeyboard" />
-    <MESSAGE value="PanelEngineer view" />
-    <MESSAGE value="MenuVeiw" />
-    <option name="LAST_COMMIT_MESSAGE" value="MenuVeiw" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/KeyboardInput.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CalculateBasicInput.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CalculateBasicInput.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>333</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/CalculateFace.java</url>
-          <line>331</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
-          <line>39</line>
-          <properties field="nameSign" class="ButtonsBasic" />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
-          <line>51</line>
-          <properties field="calculateCurrent" class="ButtonsBasic" />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
-          <line>40</line>
-          <properties field="strInputFormerSign" class="ButtonsBasic" />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/ButtonsBasic.java</url>
-          <line>41</line>
-          <properties field="dResultPercent" class="ButtonsBasic" />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

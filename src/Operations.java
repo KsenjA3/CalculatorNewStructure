@@ -20,6 +20,10 @@ public class Operations {
 
     static MathContext mathContext= new MathContext(15);
 
+    static  BigDecimal result (calculate f, BigDecimal d1, BigDecimal d2) {
+        return f.func(d1, d2);
+    }
+
     static BigDecimal plus (BigDecimal d1, BigDecimal d2) {
         return d1.add(d2, mathContext);
     }
@@ -39,8 +43,6 @@ public class Operations {
     static  BigDecimal sqrt (BigDecimal d1) { return d1.sqrt(mathContext);}
 
 
-    static  BigDecimal result (calculate f, BigDecimal d1, BigDecimal d2) {
-        return f.func(d1, d2);
-    }
+
 
 }
